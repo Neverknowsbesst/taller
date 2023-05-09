@@ -15,7 +15,7 @@ const buttons = [
     image: '/cpu.png',
     description: 'los cpu contienen pocos nucleos',
   },
-  // Agrega los demás botones con sus respectivos datos
+  // aqui agregamos mas botones con sus atributos
 ];
 
 export default function Page() {
