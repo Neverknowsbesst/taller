@@ -2,26 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer components {
+  .custom-btn {
+    /* Estilos personalizados para el botón no seleccionado */
+    background-color: #254e58;
+    color: #379683;
+    border-color: #379683;
+    /* Agrega estilos de borde */
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.25rem;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  .custom-btn.btn-selected {
+    /* Estilos personalizados para el botón seleccionado */
+    background-color: #112d32;
+    color: #88bdbc;
+    border-color: #edf5e0;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: #88bdbc;
+  /* Mantén tu estilo de fondo personalizado aquí */
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      #112d32
     )
-    rgb(var(--background-start-rgb));
+    #88bdbc;
+}
+
+.box {
+
+  background-color: #112d32;
+  color: #88bdbc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.box img {
+  /* Estilos de la imagen dentro del cuadro */
+  width: 50%;
+  height: auto;
+}
+
+.box p {
+  /* Estilos del texto dentro del cuadro */
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #254e58;
+}
+.box-container {
+  border: 2px solid #edf5e0;
+  border-radius: 0.25rem;
+  width: 50%;
 }
