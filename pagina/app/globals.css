@@ -4,11 +4,11 @@
 
 @layer components {
   .custom-btn {
-    /* Estilos personalizados para el botón no seleccionado */
+    /* Estilos para el boton no seleccionado */
     background-color: #254e58;
     color: #379683;
     border-color: #379683;
-    /* Agrega estilos de borde */
+    /* Estilos de borde */
     border-width: 1px;
     border-style: solid;
     border-radius: 0.25rem;
@@ -17,7 +17,7 @@
   }
 
   .custom-btn.btn-selected {
-    /* Estilos personalizados para el botón seleccionado */
+    /* Estilos para el boton seleccionado */
     background-color: #112d32;
     color: #88bdbc;
     border-color: #edf5e0;
@@ -26,7 +26,7 @@
 
 body {
   color: #88bdbc;
-  /* Mantén tu estilo de fondo personalizado aquí */
+  /* Estilo del fondo */
   background: linear-gradient(
       to bottom,
       transparent,
