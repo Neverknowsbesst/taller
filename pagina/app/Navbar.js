@@ -9,8 +9,8 @@ const Navbar = ({ buttons, handleButtonClick }) => {
   };
 
   return (
-    <div>
-      <nav className="flex items-center justify-center w-full bg-inherit py-4">
+    <div className='navbar-container'>
+      <nav className="flex items-center justify-center h-16 bg-inherit py-4">
         {buttons.map((button) => (
           <button
             key={button.name}

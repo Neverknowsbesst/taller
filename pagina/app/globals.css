@@ -12,6 +12,8 @@
     border-width: 1px;
     border-style: solid;
     border-radius: 0.25rem;
+    width: 120px;
+    height: 48px;
   }
 
   .custom-btn.btn-selected {
@@ -56,9 +58,14 @@ body {
   padding: 0;
   font-size: 14px;
   color: #254e58;
+  margin-bottom: 0.75rem;
+  white-space: pre-line;
 }
 .box-container {
   border: 2px solid #edf5e0;
   border-radius: 0.25rem;
   width: 50%;
+}
+.navbar-container {
+  height: 80px;
 }
